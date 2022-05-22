@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZAS FULL STACK</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="alertas"></div>
+    <form id="formulario" method="POST" action="http://localhost:5000/pizza">
+        <div class="image">
+            <img src="images/pizza.png" alt="PIZZAS FULL STACK"/>
+        </div>
+        <div class="h1">
+            <h1 class="h1">
+                PIZZAS FULL STACK
+            </h1>
+        </div>
+        <div class="background">
+            <label id="label1" for="p1">Nombres del cliente </label>
+            <input class="input" type="text" id="p1" name="p1" value="" />
+        </div>
+        <div class="background">
+            <label id="label2" for="p2">Apellidos del cliente </label>
+            <input class="input" type="text" id="p2" name="p2" value="" />
+        </div>
+        <div class="background">
+            <label for="p3">Fecha de nacimiento </label>
+            <input class="input" type="date" id="p3" name="p3" value="" />
+        </div>
+        <div class="background"> 
+            <label for="p4">Telefono del cliente </label>
+            <input class="input" type="number" id="p4" name="p4" value="" />
+        </div>
+        <div class="background">
+            <label for="p5">Direccion del cliente </label>
+            <div>
+                <textarea id ="p5" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+        <div class="background_d">
+            <h2>
+                DATOS DEL PEDIDO
+            </h2>
+        </div>
+        <div class="background_d">
+            <label for="p6">Tamaño Pizza </label>
+            <select id="p7" name="p7">
+                <option id="pequeña">pequeña</option>
+                <option id="mediana" selected>mediana</option>
+                <option id="grande">grande</option>
+            </select>  
+        </div>  
+        <div class="background_d">
+            <label for="p8">Elegir ingredientes: </label>
+        </div>
+        <div class="background_d">
+            <label for="p9"> Jamon York </label>
+                <input type="checkbox" id="p9" name="p9">
+            <label for="p10"> Champiñones </label>
+                <input type="checkbox" id="p10" name="p10">
+            <label for="p11"> Pepperoni </label>
+                <input type="checkbox" id="p11" name="p11">
+            <label for="p12"> Aceitunas </label>
+                <input type="checkbox" id="p12" name="p12">
+            <button id="botton" type="submit">Enviar Pedido</button>
+        </div>  
+</body>
+</html>
+<script src="js/script.js"></script>

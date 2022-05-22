@@ -1,0 +1,36 @@
+.h1 {
+    color: red;
+    font-weight: bold;
+    font-size: large;	
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    text-align: left;
+    }
+.image {
+    display: inline-block;
+    vertical-align: top;
+}
+.label{
+    font-family:Verdana;
+    text-align: left;
+    width: 50%;
+    height: 50%;
+    border: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.input{
+    font-family: Verdana;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+.background{
+    background-color: #55ccff;
+}
+.background_d{
+    background-color: #40ccbb;
+}
+#alertas{
+ color: red;   
+}
