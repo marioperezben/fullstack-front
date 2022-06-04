@@ -16,3 +16,18 @@ $("#botton").click(function(event) {
     
  
 });
+
+$("#p7").on('change', function() {  
+    tamano_pizza=this.value
+    console.log(tamano_pizza);
+    $.ajax({
+        type:"POST",
+        url: "http://127.0.0.1:5000/checksize",
+        data: {
+            p7: tamano_pizza,
+        },
+        success: function(result) {
+            $("#resultado_tamano").text(result);
+        }
+    })
+    });

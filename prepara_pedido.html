@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="alertas"></div>
-    <form id="formulario" method="POST" action="http://localhost:5000/pizza"></form>
+    <form id="formulario" method="POST" action="http://localhost:5000/pizza">
         <div class="image">
             <img src="images/pizza.png" alt="PIZZAS FULL STACK"/>
         </div>
@@ -49,11 +49,12 @@
         <div class="background_d">
             <label for="p7">Tamaño Pizza </label>
             <select id="p7" name="p7">
-                <option id="pequeña">pequeña</option>
-                <option id="mediana" selected>mediana</option>
-                <option id="grande">grande</option>
-                <option id="XXL">XXL</option>
+                <option value="S" id="pequeña">pequeña</option>
+                <option value="M" id="mediana" selected>mediana</option>
+                <option value="G" id="grande">grande</option>
+                <option value="XXL" id="XXL">XXL</option>
             </select>  
+            <span id="resultado_tamano"></span>
         </div>  
         <div class="background_d">
             <label for="p8">Elegir ingredientes: </label>
@@ -69,8 +70,8 @@
             <label for="p12"> Aceitunas </label>
                 <input type="checkbox" id="p12" name="p12">
             <button id="botton" type="submit">Enviar Pedido</button>
-        </div>  
+        </div>
+        </form>  
         <script src="js/script.js"></script>
 </body>
 </html>
-
